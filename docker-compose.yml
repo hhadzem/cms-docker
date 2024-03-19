@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  cms-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cms-docker
+    env_file:
+      - .env_variables
+    ports:
+      - "8888:8888"
+      - "8889:8889"
+      - "8890:8890"
+    container_name: cms-docker
