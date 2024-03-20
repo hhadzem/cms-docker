@@ -26,7 +26,6 @@ if [ ! -f /tmp/first_time ]; then
 fi
 
 echo "Starting services in background..."
-cmsAdminWebServer &
 cmsLogService &
 cmsRankingWebServer &
 
